@@ -9,12 +9,10 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MainTest {
-
     @Test
     public void testMain_SecondListGreater() {
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
-
         Main.main(new String[0]);
         String expectedOutput = "The second list has a higher average value";
         assertEquals(expectedOutput, outContent.toString().trim());

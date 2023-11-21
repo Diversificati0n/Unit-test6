@@ -24,7 +24,6 @@ public class AverageCalculator {
         if (list == null || list.isEmpty()) {
             return Double.NaN;
         }
-
         double sum = 0;
         for (double num : list) {
             sum += num;

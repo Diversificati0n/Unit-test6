@@ -9,7 +9,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class AverageCalculatorTest {
-
     @Test
     public void testCompareAverages_FirstListGreater() {
         assertEquals("The second list has a higher average value",
@@ -81,5 +80,4 @@ public class AverageCalculatorTest {
         List<Double> emptyList = Collections.emptyList();
         assertEquals(Double.NaN, AverageCalculator.calculateAverage(emptyList));
     }
-
 }
